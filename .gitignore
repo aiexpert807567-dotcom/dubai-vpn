@@ -1,0 +1,53 @@
+# ---- Secrets (never commit) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+*.jks
+keystore.properties
+local.properties
+wg-private*
+privatekey*
+secrets/
+*.secret
+
+# ---- Python / backend ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+*.db
+
+# ---- Android / Gradle ----
+mobile/.gradle/
+mobile/build/
+mobile/app/build/
+mobile/.idea/
+*.apk
+*.aab
+*.iml
+.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- Server data ----
+server/data/
+server/adguard/work/
+server/adguard/conf/
+server/wireguard/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
